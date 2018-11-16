@@ -1,7 +1,7 @@
 
 
 $(document).ready(function () {
-    $.getJSON("http://api.myjson.com/bins/1h3vb3", function (json) {
+    $.getJSON("https://api.myjson.com/bins/1h3vb3", function (json) {
         data = json;
         console.log(json);
         printAll();
@@ -13,6 +13,7 @@ $(document).ready(function () {
         }
     });
 });
+
 
 const printAll = () => {
     var books = data.books;
