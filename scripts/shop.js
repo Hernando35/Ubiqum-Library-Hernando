@@ -72,7 +72,7 @@ const printAll = () => {
 
 
 var qsRegex;
-
+var isotope;
 const searchItem = () => {
 
 var $grid = $('.grid').isotope({
