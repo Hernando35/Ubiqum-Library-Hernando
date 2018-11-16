@@ -1,0 +1,135 @@
+.body {
+    background-image: url(oldLibrary.jpeg);
+    background-attachment: fixed;
+    background-size: contain;
+    opacity: 0.9;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    filter: grayscale(25%);
+    
+}
+
+.header {
+    display: flex;
+    background-color: rgba(100, 255, 255, 0.7);
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+.header div {
+    width: 50%;
+}
+
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#search-bar {
+    border-radius: 25px;
+    padding-left: 5px;
+}
+
+.section {
+
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    border-radius: 25px;
+    padding-top: 25px;
+}
+.image-portada {
+    width: 80%;
+    height: 400px;
+}
+.empty-div {
+    background-color: rgba(100, 255, 255, 0.7);
+    border-radius: 25px;
+    font-size: 45px;
+}
+
+.flip-container {
+    perspective: 1000px;
+    height: 400px;
+    width: 30%;
+    margin: 1%
+}
+
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flipper {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+    
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: rgb(255, 199, 65);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-book {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.title-book p {
+    text-align: center;
+}
+
+.description-book {
+    
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.more-info-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.button-book{
+    background-color: #fec21a;
+            }
+
+
+
+
+
+
+
+
